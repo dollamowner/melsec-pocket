@@ -1,0 +1,23 @@
+
+:root{--navy:#13233b;--blue:#2459a9;--bg:#f3f6fb;--card:#fff;--ink:#172033;--muted:#667085;--line:#e0e6ef;--green:#176647;--amber:#805500}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{background:var(--navy);color:#fff;padding:22px 17px 18px;padding-top:calc(22px + env(safe-area-inset-top))}
+h1{font-size:22px;margin:0 0 6px}.sub{font-size:12px;color:#c7d4e7}
+main{max-width:800px;margin:auto;padding:13px 13px calc(28px + env(safe-area-inset-bottom))}
+button{border:1px solid var(--line);border-radius:11px;background:var(--card);color:var(--ink);padding:10px 12px;font-size:13px;font-weight:650;cursor:pointer}
+button.active{background:var(--blue);border-color:var(--blue);color:white}
+.row{display:flex;gap:7px;flex-wrap:wrap;margin:11px 0}.row button{flex:1}
+.search{display:grid;grid-template-columns:1fr auto;gap:8px;margin:12px 0}
+input{font:inherit;border:1px solid var(--line);border-radius:12px;background:#fff;padding:13px;width:100%;outline:none}
+input:focus{border-color:var(--blue);box-shadow:0 0 0 3px #2459a91a}
+.meta{font-size:12px;color:var(--muted);margin:11px 2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:14px;margin:9px 0;box-shadow:0 2px 7px #1b2b4508}
+.head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.code{font-size:18px;font-weight:800}.title{font-size:14px;font-weight:700;margin:8px 0 5px}
+.pill{display:inline-block;border-radius:99px;padding:4px 8px;background:#e9f0fb;color:#244d87;font-size:11px;font-weight:750;margin:5px 4px 0 0}
+.pill.green{background:#e4f6ed;color:var(--green)}.pill.warn{background:#fff3d7;color:var(--amber)}
+p{font-size:14px;line-height:1.55;margin:7px 0}.detail{display:none;border-top:1px solid var(--line);margin-top:11px;padding-top:10px;font-size:13px;line-height:1.65}.detail.open{display:block}
+.detail code{background:#f0f3f8;padding:3px 5px;border-radius:5px;white-space:pre-wrap}
+.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.actions button{font-size:12px;padding:8px 10px}
+.notice{background:#fff8e8;border:1px solid #f0d79a;border-radius:13px;padding:12px;font-size:12px;line-height:1.55;margin:12px 0}
+.empty{padding:24px;text-align:center;color:var(--muted);background:white;border-radius:14px;border:1px dashed var(--line);line-height:1.6}
+footer{font-size:11px;line-height:1.6;color:var(--muted);padding:14px 2px}

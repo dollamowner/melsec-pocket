@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#13233b">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="MELSEC Pocket">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<title>MELSEC Pocket Manual</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header><h1>⚙ MELSEC Pocket Manual</h1><div class="sub">한국어 명령어 매뉴얼 기반 · 오프라인 검색 프로토타입</div></header>
+<main>
+<div class="notice"><b>자료 범위 안내</b><br>현재 등록한 명령어는 업로드된 「PLC 공통명령편」의 MELSEC-Q/QnA 목차와 본문을 기준으로 정리했습니다. 이 파일은 iQ-R 전용 매뉴얼이 아니므로 R 시리즈에 동일하게 적용된다고 표시하지 않습니다. R 전용 매뉴얼을 추가하면 같은 검색 화면에 별도 데이터로 통합할 수 있습니다.</div>
+<div class="row" id="kind">
+<button class="active" data-kind="all">통합 검색</button><button data-kind="command">명령어</button><button data-kind="error">에러·주의</button><button data-kind="saved">즐겨찾기</button>
+</div>
+<div class="row" id="series">
+<button class="active" data-series="all">전체</button><button data-series="Q">Q / QnA</button><button data-series="R">iQ-R</button>
+</div>
+<div class="search"><input id="query" placeholder="명령어·한국어 설명·에러 번호 검색" autocomplete="off"><button id="clear">초기화</button></div>
+<div class="meta" id="meta">명령어 이름이나 설명을 검색하세요.</div>
+<section id="results"></section>
+<footer>
+<b>출처:</b> 사용자가 제공한 「PLC공통명령편.pdf」. 목차 및 본문에 표시된 장·절·페이지를 기록했습니다.<br>
+<b>주의:</b> 명령어 요약은 빠른 검색용이며, 실제 설비 적용 전에는 해당 CPU 모델, 지원 디바이스, 명령 조건 및 원본 매뉴얼을 확인하세요. 현재 프로토타입은 HTML 파일 안에 검색 데이터를 포함해 검색 화면 자체는 네트워크 없이 동작합니다. 홈 화면 설치와 iOS 오프라인 캐시는 별도 배포 단계가 필요합니다.
+</footer>
+</main>
+
+
+<script src="./app.js" defer></script>
+<script src="./register-sw.js" defer></script>
+</body>
+</html>
