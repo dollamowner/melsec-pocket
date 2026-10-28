@@ -1,4 +1,4 @@
-const CACHE_NAME = "melsec-pocket-v2";
+const CACHE_NAME = "melsec-pocket-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
